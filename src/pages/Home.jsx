@@ -13,7 +13,7 @@ export default function Home() {
               className="w-full h-64 sm:h-80 object-cover ml-2 sm:ml-6"
             />
             <div className="p-6 mt-4">
-              <Link  to='/about' className="bg-dustyRose-dark text-white  text-xl sm:text-2xl font-semibold py-4 px-6 rounded-md hover:bg-dustyRose-light transition duration-300">
+              <Link  to='/about' className="bg-deepRed text-white  text-xl sm:text-2xl font-semibold py-4 px-6 rounded-md hover:bg-deepRed-light transition duration-300">
                 Watch Our Latest Performance
               </Link>
             </div>
