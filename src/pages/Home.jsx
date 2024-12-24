@@ -1,32 +1,31 @@
-import image from '/king.png'
-export default function Home() {
-  const currentYear = new Date().getFullYear(); // Fetch the current year
+import Footer from "../components/Footer";
+import image from "/king.png";
 
+export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-between">
-      {/* Main Content */}
-      <div className="flex flex-col items-center mt-10">
-        {/* Image Card */}
-        <div className="overflow-hidden max-w-md items-center justify-center">
-          <img
-            src={image}
-            alt="Under Construction"
-            className="w-full h-auto object-cover ml-8"
-          />
-          <div className="p-6 text-center">
-            <p className="text-2xl font-medium text-white">
-              This website is under construction...
-            </p>
+    <>
+      <div className="flex flex-col items-center h-screen py-5 mx-auto">
+        <div className="flex flex-col items-center mt-10">
+          <div className="overflow-hidden max-w-md items-center justify-center">
+            <img
+              src={image}
+              alt="Under Construction"
+              className="w-full h-64 sm:h-80 object-cover ml-2 sm:ml-6"
+            />
+            <div className="p-6 ">
+              <button className="bg-dustyRose-dark text-white  text-xl sm:text-2xl font-semibold py-3 px-6 rounded-md hover:bg-dustyRose-light transition duration-300">
+                Watch Our Latest Performance
+              </button>
+            </div>
+            <div className="p-2 text-center">
+              <p className="text-xl font-medium text-white">
+                This website is under construction...
+              </p>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="w-full bg-black text-white py-4 text-center fixed bottom-0">
-        <p>
-          <span>&copy;</span> Leper King {currentYear}
-        </p>
-      </footer>
-    </div>
+      <Footer></Footer>
+    </>
   );
 }
