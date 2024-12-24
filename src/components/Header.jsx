@@ -16,8 +16,8 @@ export default function Header() {
   const location = useLocation()
 
   return (
-    <header>
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-4">
+    <header className="shadow-md">
+      <nav aria-label="Global" className="mx-auto flex max-w-7xl h-24 items-center justify-between p-4 lg:px-4">
         <div className="flex">
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Leper King</span>
