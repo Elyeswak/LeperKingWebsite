@@ -8,7 +8,7 @@ import { Link, useLocation } from 'react-router-dom'
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
-  { name: 'Contact us', href: '/contact' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 export default function Header() {

@@ -8,19 +8,21 @@ import Footer from "../components/Footer";
 
 export default function Contact() {
   return (
-    <>
-      <div className="min-h-screen flex flex-col items-center justify-start py-20 mx-auto max-w-6xl">
-        <div className="flex flex-wrap lg:flex-nowrap gap-36 w-full items-start">
-          <div className="flex-1 hidden lg:block">
+    <div className="flex flex-col min-h-screen">
+      <div className="flex-1 flex flex-col items-center justify-start mx-auto max-w-6xl py-24">
+        <div className="flex flex-col sm:flex-row gap-12 sm:gap-36 w-full items-start">
+          <div className="flex-1 sm:pt-10">
             <img
-              src="/logos/Leper.png"
+              src="/imgs/LeperKing.jpg"
               alt="Contact Us"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
 
-          <div className="flex-1 space-y-6 lg:text-left text-center lg:text-lg text-sm mx-auto mt-8">
-            <h1 className="text-4xl lg:text-4xl  font-bold mb-6 lg:mb-12">Contact Us</h1>
+          <div className="flex-1 space-y-0 sm:space-y-6 lg:text-left text-center lg:text-lg text-sm mx-auto sm:mt-10">
+            <h1 className="text-4xl lg:text-4xl font-bold mb-6 lg:mb-12">
+              Contact Us
+            </h1>
             <p className="lg:text-2xl text-base text-white mb-4 lg:mb-6">
               You can contact us through these mediums.
             </p>
@@ -75,9 +77,8 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="w-full">
-        <Footer />
-      </div>
-    </>
+      {/* Footer always at the bottom */}
+      <Footer />
+    </div>
   );
 }
